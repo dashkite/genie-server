@@ -2,6 +2,8 @@ import HTTP from "node:http"
 import handler from "serve-static"
 import final from "finalhandler"
 
+import Mirror from "./mirror"
+
 defaults = 
   port:  8000
   root:  "build"
@@ -22,7 +24,14 @@ export default ( Genie ) ->
 
   Genie.define "server:run", ->
 
-    serve = handler options.root, index: options.index
+
+    mirror = Mirror
+      .make options.source
+      .start -> Genie.run "build"
+
+    process.on "exit", -> mirror.stop()
+
+    serve = handler options.target, index: options.index
 
     server = HTTP.createServer ( request, response ) ->
       serve request, response, final request, response
