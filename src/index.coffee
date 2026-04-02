@@ -1,8 +1,8 @@
 import HTTP from "node:http"
 import handler from "serve-static"
 import final from "finalhandler"
+import chokidar from "chokidar"
 
-import Mirror from "./mirror"
 
 defaults = 
   port:  8000
@@ -24,12 +24,15 @@ export default ( Genie ) ->
 
   Genie.define "server:run", ->
 
+    chokidar
 
-    mirror = Mirror
-      .make options.source
-      .start -> Genie.run "build"
+      .watch options.source, 
+        ignoreInitial: true
 
-    process.on "exit", -> mirror.stop()
+      .on "all", -> Genie.run "build"
+
+      .on "error", ( error ) -> 
+        console.error error.message
 
     serve = handler options.target, index: options.index
 
@@ -42,9 +45,10 @@ export default ( Genie ) ->
       console.err error
     
     { port } = server.address()
+
     console.log "HTTP server listening on 
       [ http://localhost:#{ port } ]
       serving content from 
-      [ #{ options.root } ]"
+      [ #{ options.target } ]"
 
   Genie.define "serve", "server:run"
