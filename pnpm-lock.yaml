@@ -879,14 +879,14 @@ packages:
   '@dashkite/dolores@0.8.0':
     resolution: {integrity: sha512-ga+AxqsQcUjW3D5J6mCQqTU7GqJsmnlT9OfqYrmPA3lGJSjk0GqJRQb3RIjoqjjXVszeK8vAW3RdJPx0W7OhNw==}
 
-  '@dashkite/drn-loader@0.11.28':
-    resolution: {integrity: sha512-iL04S/wE8q7SPCFOL5RIWd9xtthX0mMDaVquOwPYGgA14zwkQlXN3duHqkyPVCclbifmA2Hfz95hhLx08CA7UQ==}
+  '@dashkite/drn-loader@0.11.29':
+    resolution: {integrity: sha512-P1grWcGPUsjYxrm+YptgL3XnFZmuiMAsWG1qmXHAmTH5LsOPZlxWhQvEdZCrvaVD9C1sgz7DYy629TubVPEuZg==}
 
   '@dashkite/drn-sky@0.8.31':
     resolution: {integrity: sha512-H+D3R9Jwi56DOxv1zcO+gepZS6fxUyrdJxgj8VSt7FUAPwKORAmqd6hPw0cOH9S2wO+xiNLuB8FAxrslMlh0xw==}
 
-  '@dashkite/drn@0.12.30':
-    resolution: {integrity: sha512-U2UotkCIENGRplwFu1JgLTVRBy0kMxC7hBHV7Cb6rAR7LctRaWfE3gy8bAzI6VfO8jKcZQO9tFGGLi+8Ghw+cw==}
+  '@dashkite/drn@0.12.31':
+    resolution: {integrity: sha512-OB7w4esiUDxS+yfKpjwROfnEptPOm2lTxugC483x7P4JICLbGylaoyBFXz9nPwP6wT0moYC5BA44k52czHJzjA==}
 
   '@dashkite/genie-clean@0.9.0':
     resolution: {integrity: sha512-cR5IaFycabxIOH0XrExG5DCrm91milsdPqt104+AcIFEtpthwQ55lgOkS660tC8l7SxnwZzMZbZxHP3oK0iT0A==}
@@ -4271,13 +4271,13 @@ snapshots:
       - aws-crt
       - encoding
 
-  '@dashkite/drn-loader@0.11.28': {}
+  '@dashkite/drn-loader@0.11.29': {}
 
   '@dashkite/drn-sky@0.8.31(@aws-sdk/credential-provider-node@3.529.0)':
     dependencies:
       '@dashkite/bake': 0.0.6
       '@dashkite/dolores': 0.8.0(@aws-sdk/credential-provider-node@3.529.0)
-      '@dashkite/drn': 0.12.30
+      '@dashkite/drn': 0.12.31
       '@dashkite/joy': 0.7.0
       '@dashkite/sky-local-storage': 0.8.0
       '@dashkite/xrl': 0.4.0
@@ -4289,7 +4289,7 @@ snapshots:
       - aws-crt
       - encoding
 
-  '@dashkite/drn@0.12.30':
+  '@dashkite/drn@0.12.31':
     dependencies:
       '@dashkite/bake': 0.0.6
       '@dashkite/joy': 0.7.0
@@ -4319,8 +4319,8 @@ snapshots:
 
   '@dashkite/genie-drn@0.12.33':
     dependencies:
-      '@dashkite/drn': 0.12.30
-      '@dashkite/drn-loader': 0.11.28
+      '@dashkite/drn': 0.12.31
+      '@dashkite/drn-loader': 0.11.29
       '@dashkite/masonry-hooks': 0.8.0
       '@dashkite/zephyr': 0.9.0
       js-yaml: 4.2.0
@@ -4342,7 +4342,7 @@ snapshots:
   '@dashkite/genie-publish@0.9.35(@aws-sdk/credential-provider-node@3.529.0)':
     dependencies:
       '@dashkite/dolores': 0.8.0(@aws-sdk/credential-provider-node@3.529.0)
-      '@dashkite/drn': 0.12.30
+      '@dashkite/drn': 0.12.31
       '@dashkite/drn-sky': 0.8.31(@aws-sdk/credential-provider-node@3.529.0)
       '@dashkite/joy': 0.7.0
       '@dashkite/masonry': 0.21.0
