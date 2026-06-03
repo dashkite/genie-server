@@ -882,8 +882,8 @@ packages:
   '@dashkite/drn-loader@0.11.29':
     resolution: {integrity: sha512-P1grWcGPUsjYxrm+YptgL3XnFZmuiMAsWG1qmXHAmTH5LsOPZlxWhQvEdZCrvaVD9C1sgz7DYy629TubVPEuZg==}
 
-  '@dashkite/drn-sky@0.8.31':
-    resolution: {integrity: sha512-H+D3R9Jwi56DOxv1zcO+gepZS6fxUyrdJxgj8VSt7FUAPwKORAmqd6hPw0cOH9S2wO+xiNLuB8FAxrslMlh0xw==}
+  '@dashkite/drn-sky@0.8.32':
+    resolution: {integrity: sha512-iKlB02KiwfgV2I9EIsk4NzDHoLXNs/gAoqlG+JbJsHnW8fBZ+J7qY/loIJgGJXYpBx9F3tLqAHs4Pl55qTkfyA==}
 
   '@dashkite/drn@0.12.31':
     resolution: {integrity: sha512-OB7w4esiUDxS+yfKpjwROfnEptPOm2lTxugC483x7P4JICLbGylaoyBFXz9nPwP6wT0moYC5BA44k52czHJzjA==}
@@ -894,8 +894,8 @@ packages:
   '@dashkite/genie-coffee@0.9.0':
     resolution: {integrity: sha512-8Ukg3m/nQnxbmrww313lzYJJQRAxhRgbPpbqCWj7ovzS8LejoA1OGbbjRd8Ew7SdzZrJ6WYY7d08VxIbim72mw==}
 
-  '@dashkite/genie-drn@0.12.33':
-    resolution: {integrity: sha512-U69yLDxvaqj1zarJbzuDW4yO2eSIFSGZOoblccaXPb4A9mmQJYYQ0Gmm1s9fYR1x/a2cZX/II96ScpL1iOgErA==}
+  '@dashkite/genie-drn@0.12.34':
+    resolution: {integrity: sha512-k3uXwIu/vSpBwfNdRQAnsy4xs07XguACF3YAblmYqjhqf32JyNrxPWqEHoKW5PON2FeGWLonKVA2t97AOkh62w==}
 
   '@dashkite/genie-module@0.5.42':
     resolution: {integrity: sha512-OOMFSoWR0Qt6E4lWRV9xNumXEEVnSIGfJ/mYp4cb5VKPrwBBNOVvyO+G77KcyqHQ05qThOSDOzOF2owwe08xhg==}
@@ -932,8 +932,8 @@ packages:
   '@dashkite/masonry-coffee@0.2.0':
     resolution: {integrity: sha512-xJO48SIRpsYbJF32CwpA6yeEJhNh+DtxCucyt4MNJqO0yru9X7hoxZsHneRoUE+kISD0KTO8DLQiHv21nU/V2A==}
 
-  '@dashkite/masonry-hooks@0.8.0':
-    resolution: {integrity: sha512-GqZt5YlYURo4j1v7qNjP0QxZ+Qb3pts/G2aPgVtL3ZHGwEYtj2fCf58nNUwmygdK89n3LiEY6RvR0uvmmKXMPA==}
+  '@dashkite/masonry-hooks@0.12.11':
+    resolution: {integrity: sha512-Sc05H9mXTy2aSqeUTi3yVZA5GrvvY2bI/M2Q92BYb978Q9dtZ15bp6zKp/wInxOyA3D7WwS34VbUkDzhJMSGKA==}
 
   '@dashkite/masonry-module@0.7.0':
     resolution: {integrity: sha512-84Vqt/deTv61xQu0KMm+dReuYiaha1izVQWgw7/LiTikmTDTvgQGC6cmNF1Cngqivntqn6CKnrbnJfk1B/dk+w==}
@@ -1843,6 +1843,10 @@ packages:
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+
+  js-yaml@4.1.1:
+    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
+    hasBin: true
 
   js-yaml@4.2.0:
     resolution: {integrity: sha512-ePWsvanv0DWuDRsW8dnt+R4jQ31SCRCQ7hhNcPXZPsoBZiemuZNYGf7adZdqX2D86j6rvKp3RpCxVTSb8WQlOw==}
@@ -4273,7 +4277,7 @@ snapshots:
 
   '@dashkite/drn-loader@0.11.29': {}
 
-  '@dashkite/drn-sky@0.8.31(@aws-sdk/credential-provider-node@3.529.0)':
+  '@dashkite/drn-sky@0.8.32(@aws-sdk/credential-provider-node@3.529.0)':
     dependencies:
       '@dashkite/bake': 0.0.6
       '@dashkite/dolores': 0.8.0(@aws-sdk/credential-provider-node@3.529.0)
@@ -4317,21 +4321,21 @@ snapshots:
       - '@swc/helpers'
       - supports-color
 
-  '@dashkite/genie-drn@0.12.33':
+  '@dashkite/genie-drn@0.12.34':
     dependencies:
       '@dashkite/drn': 0.12.31
       '@dashkite/drn-loader': 0.11.29
-      '@dashkite/masonry-hooks': 0.8.0
+      '@dashkite/masonry-hooks': 0.12.11
       '@dashkite/zephyr': 0.9.0
-      js-yaml: 4.2.0
+      js-yaml: 4.1.1
       micromatch: 4.0.8
     transitivePeerDependencies:
       - supports-color
 
   '@dashkite/genie-module@0.5.42(@aws-sdk/credential-provider-node@3.529.0)':
     dependencies:
-      '@dashkite/drn-sky': 0.8.31(@aws-sdk/credential-provider-node@3.529.0)
-      '@dashkite/genie-drn': 0.12.33
+      '@dashkite/drn-sky': 0.8.32(@aws-sdk/credential-provider-node@3.529.0)
+      '@dashkite/genie-drn': 0.12.34
       '@dashkite/genie-publish': 0.9.35(@aws-sdk/credential-provider-node@3.529.0)
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
@@ -4343,7 +4347,7 @@ snapshots:
     dependencies:
       '@dashkite/dolores': 0.8.0(@aws-sdk/credential-provider-node@3.529.0)
       '@dashkite/drn': 0.12.31
-      '@dashkite/drn-sky': 0.8.31(@aws-sdk/credential-provider-node@3.529.0)
+      '@dashkite/drn-sky': 0.8.32(@aws-sdk/credential-provider-node@3.529.0)
       '@dashkite/joy': 0.7.0
       '@dashkite/masonry': 0.21.0
       '@dashkite/masonry-module': 0.7.0(@aws-sdk/credential-provider-node@3.529.0)
@@ -4400,9 +4404,9 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@dashkite/masonry-hooks@0.8.0':
+  '@dashkite/masonry-hooks@0.12.11':
     dependencies:
-      '@dashkite/masonry': 0.14.0
+      '@dashkite/masonry': 0.21.0
     transitivePeerDependencies:
       - supports-color
 
@@ -4514,7 +4518,7 @@ snapshots:
   '@dashkite/zephyr@0.9.0':
     dependencies:
       '@dashkite/joy': 0.3.16
-      js-yaml: 4.2.0
+      js-yaml: 4.1.1
 
   '@deno/shim-deno-test@0.5.0': {}
 
@@ -5483,6 +5487,10 @@ snapshots:
   isexe@3.1.5: {}
 
   js-tokens@4.0.0: {}
+
+  js-yaml@4.1.1:
+    dependencies:
+      argparse: 2.0.1
 
   js-yaml@4.2.0:
     dependencies:
