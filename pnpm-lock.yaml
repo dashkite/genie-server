@@ -894,8 +894,8 @@ packages:
   '@dashkite/genie-coffee@0.9.0':
     resolution: {integrity: sha512-8Ukg3m/nQnxbmrww313lzYJJQRAxhRgbPpbqCWj7ovzS8LejoA1OGbbjRd8Ew7SdzZrJ6WYY7d08VxIbim72mw==}
 
-  '@dashkite/genie-drn@0.12.35':
-    resolution: {integrity: sha512-VK8MmeiT4L8+6TyibAOJfiKMjMBxpHkegXHVC7ctOCgQL0hA0RqwGQkcCCt+mxvOdnyTPXlNXCXhP8ApaDmQsw==}
+  '@dashkite/genie-drn@0.12.36':
+    resolution: {integrity: sha512-WWVeRnusz4XjK3jrNwOGApxftmWpGTgnqhahky7XiUU3OT7sxgtZH2PcgPQC7wZDfynO0YwvcvSDICgBzqNzLQ==}
 
   '@dashkite/genie-module@0.5.42':
     resolution: {integrity: sha512-OOMFSoWR0Qt6E4lWRV9xNumXEEVnSIGfJ/mYp4cb5VKPrwBBNOVvyO+G77KcyqHQ05qThOSDOzOF2owwe08xhg==}
@@ -4324,7 +4324,7 @@ snapshots:
       - '@swc/helpers'
       - supports-color
 
-  '@dashkite/genie-drn@0.12.35':
+  '@dashkite/genie-drn@0.12.36':
     dependencies:
       '@dashkite/drn': 0.12.32
       '@dashkite/drn-loader': 0.11.29
@@ -4339,7 +4339,7 @@ snapshots:
   '@dashkite/genie-module@0.5.42(@aws-sdk/credential-provider-node@3.529.0)':
     dependencies:
       '@dashkite/drn-sky': 0.8.33(@aws-sdk/credential-provider-node@3.529.0)
-      '@dashkite/genie-drn': 0.12.35
+      '@dashkite/genie-drn': 0.12.36
       '@dashkite/genie-publish': 0.9.35(@aws-sdk/credential-provider-node@3.529.0)
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
@@ -4525,7 +4525,7 @@ snapshots:
   '@dashkite/zephyr@0.9.0':
     dependencies:
       '@dashkite/joy': 0.3.16
-      js-yaml: 4.2.0
+      js-yaml: 4.1.1
 
   '@deno/shim-deno-test@0.5.0': {}
 
