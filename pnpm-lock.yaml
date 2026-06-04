@@ -885,8 +885,8 @@ packages:
   '@dashkite/drn-sky@0.8.32':
     resolution: {integrity: sha512-iKlB02KiwfgV2I9EIsk4NzDHoLXNs/gAoqlG+JbJsHnW8fBZ+J7qY/loIJgGJXYpBx9F3tLqAHs4Pl55qTkfyA==}
 
-  '@dashkite/drn@0.12.31':
-    resolution: {integrity: sha512-OB7w4esiUDxS+yfKpjwROfnEptPOm2lTxugC483x7P4JICLbGylaoyBFXz9nPwP6wT0moYC5BA44k52czHJzjA==}
+  '@dashkite/drn@0.12.32':
+    resolution: {integrity: sha512-kQ0Ne+/mtfZ/M2J1oPlwa9a1+xOHuiJ01adHHRwvvmFWiz+RgQhByFejC61qsY3fHB2sPkR1CFNTPEQwtPNt/Q==}
 
   '@dashkite/genie-clean@0.9.0':
     resolution: {integrity: sha512-cR5IaFycabxIOH0XrExG5DCrm91milsdPqt104+AcIFEtpthwQ55lgOkS660tC8l7SxnwZzMZbZxHP3oK0iT0A==}
@@ -913,6 +913,9 @@ packages:
     resolution: {integrity: sha512-MTS20sb/usuOnPawtzbA9kBmTJpPwjEXSdPMbciQ22/WdLPSvRgFgpZASDvF4iDHiOHL7BkvTwGLGeDmMaelOQ==}
     engines: {node: '>=20.0.0'}
     hasBin: true
+
+  '@dashkite/joy@0.12.40':
+    resolution: {integrity: sha512-osq/1Lms2GpR04w7p4moF4dwXNYrrBihppQjDejn4+YN+Ak8sceWbuBo3nfpDS/szJ14/4aG7pkf2d2UwOXd+w==}
 
   '@dashkite/joy@0.3.16':
     resolution: {integrity: sha512-dsU0us4j1Pb+zceoBvLbnZ2PbmULkJUtM2vtWLxKmoc1DE4w9SVTiPTe6JWvF0A0vk90ldv+Lc9qEA5x3O+DtQ==}
@@ -4281,7 +4284,7 @@ snapshots:
     dependencies:
       '@dashkite/bake': 0.0.6
       '@dashkite/dolores': 0.8.0(@aws-sdk/credential-provider-node@3.529.0)
-      '@dashkite/drn': 0.12.31
+      '@dashkite/drn': 0.12.32
       '@dashkite/joy': 0.7.0
       '@dashkite/sky-local-storage': 0.8.0
       '@dashkite/xrl': 0.4.0
@@ -4293,10 +4296,10 @@ snapshots:
       - aws-crt
       - encoding
 
-  '@dashkite/drn@0.12.31':
+  '@dashkite/drn@0.12.32':
     dependencies:
       '@dashkite/bake': 0.0.6
-      '@dashkite/joy': 0.7.0
+      '@dashkite/joy': 0.12.40
       '@dashkite/sky-local-storage': 0.8.0
       '@dashkite/url-codex': 0.5.0
       '@dashkite/url-router': 0.5.0
@@ -4323,7 +4326,7 @@ snapshots:
 
   '@dashkite/genie-drn@0.12.34':
     dependencies:
-      '@dashkite/drn': 0.12.31
+      '@dashkite/drn': 0.12.32
       '@dashkite/drn-loader': 0.11.29
       '@dashkite/masonry-hooks': 0.12.11
       '@dashkite/zephyr': 0.9.0
@@ -4346,7 +4349,7 @@ snapshots:
   '@dashkite/genie-publish@0.9.35(@aws-sdk/credential-provider-node@3.529.0)':
     dependencies:
       '@dashkite/dolores': 0.8.0(@aws-sdk/credential-provider-node@3.529.0)
-      '@dashkite/drn': 0.12.31
+      '@dashkite/drn': 0.12.32
       '@dashkite/drn-sky': 0.8.32(@aws-sdk/credential-provider-node@3.529.0)
       '@dashkite/joy': 0.7.0
       '@dashkite/masonry': 0.21.0
@@ -4386,6 +4389,8 @@ snapshots:
       source-map-support: 0.5.21
     transitivePeerDependencies:
       - '@swc/helpers'
+
+  '@dashkite/joy@0.12.40': {}
 
   '@dashkite/joy@0.3.16': {}
 
