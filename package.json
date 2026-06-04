@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/genie-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Genie preset for a simple static Web server",
   "keywords": [],
   "homepage": "https://github.com/dashkite/genie-server#readme",
